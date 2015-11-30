@@ -1,4 +1,7 @@
 using System;
+using System.IO;
+
+using Newtonsoft.Json;
 
 namespace DevKimchi.FilteringSample.Models
 {
@@ -21,7 +24,10 @@ namespace DevKimchi.FilteringSample.Models
         /// <param name="filename">Filename to deserialise.</param>
         protected override void OnInitialising(string filename)
         {
-            throw new NotImplementedException();
+            using (var reader = File.OpenText(filename))
+            {
+                this.Filter = JsonConvert.DeserializeObject<Filter>(reader.ReadToEnd());
+            }
         }
     }
 }
