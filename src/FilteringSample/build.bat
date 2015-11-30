@@ -19,10 +19,10 @@ set NAMESPACE=[YOUR_NAMESPACE]
 set /p USERNAME=username:
 set /p PASSWORD=password:
 
-echo
+echo .
 echo Generating CRM proxy classes for the following CRM Instance:
 echo %URL%
-echo
+echo .
 echo Generating CRM proxy classes....
 
 CrmSvcUtil.exe /url:%URL% /n:%NAMESPACE% /u:"%USERNAME%" /p:"%PASSWORD%

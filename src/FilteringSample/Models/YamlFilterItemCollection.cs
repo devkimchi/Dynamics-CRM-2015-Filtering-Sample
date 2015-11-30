@@ -1,4 +1,8 @@
 using System;
+using System.IO;
+
+using YamlDotNet.Serialization;
+using YamlDotNet.Serialization.NamingConventions;
 
 namespace DevKimchi.FilteringSample.Models
 {
@@ -21,7 +25,11 @@ namespace DevKimchi.FilteringSample.Models
         /// <param name="filename">Filename to deserialise.</param>
         protected override void OnInitialising(string filename)
         {
-            throw new NotImplementedException();
+            using (var reader = File.OpenText(filename))
+            {
+                var deserialiser = new Deserializer(namingConvention: new CamelCaseNamingConvention());
+                this.Filter = deserialiser.Deserialize<Filter>(reader);
+            }
         }
     }
 }

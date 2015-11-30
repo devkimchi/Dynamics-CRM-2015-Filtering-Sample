@@ -2,6 +2,7 @@ using System;
 using System.IO;
 
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace DevKimchi.FilteringSample.Models
 {
@@ -26,7 +27,11 @@ namespace DevKimchi.FilteringSample.Models
         {
             using (var reader = File.OpenText(filename))
             {
-                this.Filter = JsonConvert.DeserializeObject<Filter>(reader.ReadToEnd());
+                var settings = new JsonSerializerSettings()
+                                   {
+                                       ContractResolver = new CamelCasePropertyNamesContractResolver()
+                                   };
+                this.Filter = JsonConvert.DeserializeObject<Filter>(reader.ReadToEnd(), settings);
             }
         }
     }
