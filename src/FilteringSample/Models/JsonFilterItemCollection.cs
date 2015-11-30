@@ -12,7 +12,7 @@ namespace DevKimchi.FilteringSample.Models
     public class JsonFilterItemCollection : FilterItemCollection
     {
         /// <summary>
-        /// Initialises a new instance of the <see cref="JsonFilterItemCollection" /> class.
+        /// Initializes a new instance of the <see cref="JsonFilterItemCollection" /> class.
         /// </summary>
         /// <param name="filename">Filename to deserialise.</param>
         public JsonFilterItemCollection(string filename) : base(filename)

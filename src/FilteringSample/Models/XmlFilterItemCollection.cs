@@ -9,7 +9,7 @@ namespace DevKimchi.FilteringSample.Models
     public class XmlFilterItemCollection : FilterItemCollection
     {
         /// <summary>
-        /// Initialises a new instance of the <see cref="XmlFilterItemCollection" /> class.
+        /// Initializes a new instance of the <see cref="XmlFilterItemCollection" /> class.
         /// </summary>
         /// <param name="filename">Filename to deserialise.</param>
         public XmlFilterItemCollection(string filename) : base(filename)

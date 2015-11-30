@@ -14,7 +14,7 @@ namespace DevKimchi.FilteringSample.Models
         private const string YamlExtension = "yml";
 
         /// <summary>
-        /// Initialises a new instance of the <see cref="FilterItemCollection" /> class.
+        /// Initializes a new instance of the <see cref="FilterItemCollection" /> class.
         /// </summary>
         /// <param name="filename">Filename to deserialise.</param>
         protected FilterItemCollection(string filename)

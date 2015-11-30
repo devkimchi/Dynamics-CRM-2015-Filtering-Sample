@@ -12,7 +12,7 @@ namespace DevKimchi.FilteringSample.Models
     public class YamlFilterItemCollection : FilterItemCollection
     {
         /// <summary>
-        /// Initialises a new instance of the <see cref="YamlFilterItemCollection" /> class.
+        /// Initializes a new instance of the <see cref="YamlFilterItemCollection" /> class.
         /// </summary>
         /// <param name="filename">Filename to deserialise.</param>
         public YamlFilterItemCollection(string filename) : base(filename)
