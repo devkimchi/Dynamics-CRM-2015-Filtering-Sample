@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{71B6EE5A-1
 		Settings.StyleCop = Settings.StyleCop
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilteringSample.ApiApp", "FilteringSample.ApiApp\FilteringSample.ApiApp.csproj", "{89E89E64-96C2-4F8E-BF5E-DD09CC1949C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{20E020CC-F114-4ED5-8797-84F0BE56E860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20E020CC-F114-4ED5-8797-84F0BE56E860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20E020CC-F114-4ED5-8797-84F0BE56E860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E89E64-96C2-4F8E-BF5E-DD09CC1949C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E89E64-96C2-4F8E-BF5E-DD09CC1949C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E89E64-96C2-4F8E-BF5E-DD09CC1949C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E89E64-96C2-4F8E-BF5E-DD09CC1949C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
