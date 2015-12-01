@@ -8,14 +8,14 @@ using Microsoft.Xrm.Sdk.Metadata;
 namespace DevKimchi.FilteringSample
 {
     /// <summary>
-    /// This reprents the filtering service entity.
+    /// This represents the filtering service entity.
     /// </summary>
     public class EntityFilteringService : ICodeWriterFilterService
     {
         private readonly IFilterItemCollection _collection;
 
         /// <summary>
-        /// Initialise a new instance of the <see cref="EntityFilteringService" /> class.
+        /// Initializes a new instance of the <see cref="EntityFilteringService" /> class.
         /// </summary>
         /// <param name="defaultService"><see cref="ICodeWriterFilterService" /> instance.</param>
         public EntityFilteringService(ICodeWriterFilterService defaultService)
